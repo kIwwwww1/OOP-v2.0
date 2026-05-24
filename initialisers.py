@@ -42,7 +42,6 @@ user1 = Player()
 print(user1.lvl)
 
 Player.set_cls_field()
-print()
 
 user2 = Player()
 print(user2.lvl)
