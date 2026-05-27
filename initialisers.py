@@ -17,13 +17,13 @@ class Player:
     def lvl(self):
 
         time_diff = datetime.now() - self.__born
-        return self.__lvl, str(time_diff)
+        return self._Player__lvl, str(time_diff)
 
     @lvl.setter
     def lvl(self, numeric: int):
-        self.__lvl += Player.__type_test(numeric)
-        if self.__lvl >= 100:
-            self.__lvl = 100
+        self._Player__lvl += Player.__type_test(numeric)
+        if self._Player__lvl >= 100:
+            self._Player__lvl = 100
 
     @classmethod
     def set_cls_field(cls):
